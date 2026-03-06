@@ -97,7 +97,15 @@ streamlit run app.py
 Add screenshot here
 
 ```
-screenshots/app_demo.png
+## 📸 Application Screenshots
+
+<p align="center">
+  <img src="C:\Users\Rohit Kshirsagar\Pictures\Screenshots\Screenshot 2026-03-06 232119.png" width="800">
+</p>
+
+<p align="center">
+  <img src="C:\Users\Rohit Kshirsagar\Pictures\Screenshots\Screenshot 2026-03-06 232141.png" width="800">
+</p>
 ```
 
 ---
@@ -115,3 +123,4 @@ screenshots/app_demo.png
 Rohit Kshirsagar
 
 Aspiring Machine Learning Engineer
+
