@@ -9,7 +9,7 @@ st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
 st.markdown("""
     <style>
     .stButton>button {
-        width: 100%
+        width: 100%;
         background-color: #FF4B4B;
         color: white;
         font-weight: bold;
@@ -28,14 +28,21 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+from pathlib import Path
+import joblib
+import streamlit as st
+
 @st.cache_resource
 def load_model():
     try:
-        # model = joblib.load("customer_churn_model.pkl")
-        pipeline = joblib.load("customer_churn_pipeline.pkl")
+        BASE_DIR = Path(__file__).resolve().parent.parent
+        MODEL_PATH = BASE_DIR / "models" / "customer_churn_pipeline.pkl"
+
+        pipeline = joblib.load(MODEL_PATH)
         return pipeline
-    except FileNotFoundError:
-        st.error("Model files not found. Run the notebook first.")
+
+    except Exception as e:
+        st.error(f"Model loading failed: {e}")
         return None
     
 pipeline = load_model()
