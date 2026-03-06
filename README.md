@@ -90,14 +90,6 @@ Run the app
 streamlit run app.py
 ```
 
-## 📸 Application Screenshots
-
-### Dashboard UI
-<img src="screenshots/app_ui.png" width="900">
-
-### Churn Prediction Result
-<img src="screenshots/prediction.png" width="900">
-
 ## Future Improvements
 
 - Deploy on cloud
@@ -111,6 +103,7 @@ streamlit run app.py
 Rohit Kshirsagar
 
 Aspiring Machine Learning Engineer
+
 
 
 
